@@ -1,0 +1,71 @@
+           Logic building with industrial project - 1
+***************************************************
+
+Name :
+ Customised Virtual File System
+
+Technology used :
+C Programming Language
+
+Desrciption : 
+This Project is used create customised file System
+ which can be work on windows NT platforms.
+we are going to implement UFS file System.
+
+Software Requirement :
+Any operating System.
+
+Hardware Requirement :
+Minimum 512 MB of RAM necessory.
+
+Platform :
+We prefer windows NT oprating System.
+
+Storage device:
+Primary 		 RAM
+Secondary 	 HDD
+
+Everything which is storage in HDD is considered as a file.
+File is unformated uniform stream of bytes.
+
+File System :
+File system is way of storing and retriving the files into
+the harddisk.
+Examples :
+NTFS : New Technology File System(Windows)
+FAT 32 / FAT 16 : File Allocation Table (16 / 32)(Linux)
+UFS : UNIX File System.   (our Project used)
+
+*****************************************************************
+                     Customised Virtual File System
+
+Customised : Becaus it is designed dependes on the user requirement
+Virtual : Beacuse its used in the RAM.
+File System : Way of storing and retriving the files. 
+
+File System Programming:
+	Library function - Inmtrenally calls system calls ex:fopen()
+	system calls-Internally executed by the kernel ex:open()
+Important System of file subsystem:
+open(): it is used to open existing file
+close() : it is used to close the existing file
+read() : it is used to read the data from  file
+write() : it is used to write data into file
+lseek() : it is used to change the offset of the file
+creat() : it is used to create new regular file file
+
+int open(char * name , int mode);
+	1:NAme of the file
+	2:Mode in which we want to open the file (O_RDONLY , OWRONLY , O_RDWR)
+	Return : Integer which is  treated as a file descripter.
+
+void close(int fd):
+1 : file decripter which is return by the open 
+Return : Nothing 
+
+
+
+
+
+
+
